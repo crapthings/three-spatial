@@ -72,6 +72,7 @@ Start with [SKILL.md](.agents/skills/three-spatial/SKILL.md). Detailed reference
 - [Geometry and orientation commands](.agents/skills/three-spatial/references/operations.md)
 - [Procedural collections and semantic indexes](.agents/skills/three-spatial/references/semantic-index.md)
 - [Surface integrity and visibility](.agents/skills/three-spatial/references/surfaces.md)
+- [Proportions and scale relationships](.agents/skills/three-spatial/references/proportions.md)
 - [Layout](.agents/skills/three-spatial/references/layout.md), [support and connections](.agents/skills/three-spatial/references/relations.md), and [color](.agents/skills/three-spatial/references/color.md)
 
 The complete skill lives in `.agents/skills/three-spatial` and can also be copied into another project. It includes its own scripts, references, example index, and license.

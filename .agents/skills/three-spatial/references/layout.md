@@ -8,7 +8,7 @@ Use when constructing scenes, fitting contents, or reviewing crowding and circul
 - **Assembly:** fit within its functional zone and effect on nearby fixtures.
 - **Contents:** usable interior bounds, edge padding, headroom, sibling spacing, alignment, and rhythm.
 
-Return to the whole after a local change. `partOf` expresses composition, not geometric containment or visual grouping. Preserve intentional density: a market and a sparse gallery need different layouts. Lowpoly style does not justify crowding or exaggerated proportions.
+Return to the whole after a local change. `partOf` expresses composition, not geometric containment or visual grouping. Preserve intentional density: a market and a sparse gallery need different layouts. Use [proportions.md](proportions.md) when the issue concerns relative dimensions rather than placement or spacing.
 
 ## Distinguish clearances
 

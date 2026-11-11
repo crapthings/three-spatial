@@ -26,6 +26,7 @@ Use existing scenes or offline files. Do not start a development server automati
 | Task | Reference |
 | --- | --- |
 | Units, size frames, style protections | [spatial-contract.md](references/spatial-contract.md) |
+| Intrinsic, part-to-whole and scene-scale proportions | [proportions.md](references/proportions.md) |
 | CLI requests, orientation, constraints, limitations | [operations.md](references/operations.md) |
 | Part-whole structure, PCG selection and identities | [semantic-index.md](references/semantic-index.md) |
 | Composition, padding, density and circulation | [layout.md](references/layout.md) |

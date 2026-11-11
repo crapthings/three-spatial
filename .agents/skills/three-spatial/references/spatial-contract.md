@@ -32,6 +32,8 @@ Changing the declaration changes physical interpretation; it does not automatica
 
 Arrays use X/Y/Z order. A fused mesh's whole AABB cannot be substituted for one semantic region's dimensions. `dimensions.edit.mode` declares `generator`, `source-code`, `uniform-scale` or `none`; it does not execute a resize. Widening a shelf may require changing board spans and product slots while preserving products and board thickness, rather than stretching the assembly.
 
+For choosing intrinsic, part-to-whole, or scene-scale relationships, see [proportions.md](proportions.md). This contract defines measurement and edit policy; that reference guides proportion decisions.
+
 ## Style and inheritance
 
 A scene or part may declare:
