@@ -30,6 +30,6 @@ Use existing scenes or offline files. Do not start a development server automati
 | Part-whole structure, PCG selection and identities | [semantic-index.md](references/semantic-index.md) |
 | Composition, padding, density and circulation | [layout.md](references/layout.md) |
 | Support chains, mounting and component completeness | [relations.md](references/relations.md) |
-| Missing caps, disappearing faces, apparent clipping | [surfaces.md](references/surfaces.md) |
+| Surface integrity, facing, intersections and clipping | [surfaces.md](references/surfaces.md) |
 | Palette, material response, lighting and seeded color | [color.md](references/color.md) |
 | Dependencies, examples and optional live bridge | [setup.md](references/setup.md) |

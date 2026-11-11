@@ -1,37 +1,37 @@
-# Missing surfaces and apparent clipping
+# Surface integrity and visibility
 
-Use when wells, columns, roofs, or other solids look hollow, disappear from one side, or appear to intersect. Establish whether the user reports a defect or requests an intentional cutaway before changing visibility.
+Use for missing faces, unexpected transparency, apparent clipping, or interpenetration. Establish the intended geometry and visibility before choosing a repair; an intentional opening or cutaway is not a missing-face defect.
 
-## Diagnose the symptom
+## Classify the structure
 
-| Symptom | First checks |
+| Structure | Required surface relationships |
 | --- | --- |
-| One side disappears as the camera moves | Triangle winding, material side, mirrored transforms |
-| A rim or end is absent from every angle | Missing cap, wall thickness, incomplete generator topology |
-| Geometry is sliced when the camera approaches | Camera near plane, camera position, explicit clipping planes |
-| Surfaces flicker or alternate | Duplicate/coplanar faces and depth precision |
-| One solid protrudes through another | Actual geometry intersection, placement, or missing Boolean cleanup |
+| Closed solid | A closed, consistently oriented boundary, without unintended holes or degenerate faces |
+| Open shell with thickness | Inner and outer surfaces joined around exposed opening edges; preserve the intended opening |
+| Thin sheet | An intentional zero-thickness surface with a defined viewing-side policy |
+| Assembly | Correct contact and junctions between components; remove internal/coplanar duplicates when forming a unified solid |
 
-Backface culling rejects triangles by their facing. Clipping removes geometry or fragments outside a volume/plane. Neither term alone establishes the cause of a reported “see-through” object.
+For example, a well rim is an opening-edge connection in a thick shell, while a solid column needs a closed boundary. Choose the structural category from design intent, not the object name or primitive constructor. Mixed assemblies can contain several categories.
 
-## Repair the source geometry
+## Diagnose the failure
 
-- **Wells and hollow vessels:** build outer and inner walls plus an annular top rim with consistent winding. Add a bottom only where the design requires one. An open-ended cylinder supplies no rim surface; a full disk would incorrectly seal the opening. Close the annulus edges against both walls without coplanar duplicates.
-- **Columns and other solids:** check top/bottom caps and all side surfaces. For a section intended to be closed, match boundary edges and avoid holes or degenerate triangles. At assembly junctions, verify actual contact; remove internal faces when forming a unified shell.
-- **Wrong facing:** inspect indexed triangle order or non-indexed vertex order, with transformed facing for mirrored instances. Reverse incorrectly wound triangles at the generator/import source and regenerate normals afterward. `computeVertexNormals()` changes shading normals, not triangle winding.
-- **Material sides:** Three.js defaults to `FrontSide`. `DoubleSide` can help diagnose sidedness or represent intentionally thin two-sided sheets, but it does not create caps, thickness, or missing triangles. Do not apply it globally to hide a broken solid.
-- **Overlapping solids:** fix placement or construct the intended union/difference. Hiding surfaces, disabling depth testing, or changing render order does not repair interpenetration. Use polygon offset only for deliberately layered surfaces, not duplicate structural faces.
+- **Missing surface:** inspect generator coverage, cap options, boundary loops, and thickness. Close only unintended boundaries. A full cap can incorrectly seal a deliberate opening; a two-sided material cannot supply missing geometry.
+- **Incorrect facing:** inspect triangle winding and final transforms, including reflections. Correct winding at the generator/import source, then regenerate shading normals. `computeVertexNormals()` does not reverse triangles. Three.js defaults to `FrontSide`; use `DoubleSide` for an intended two-sided sheet or a scoped diagnostic, not as a global solid-repair policy.
+- **Interpenetration:** verify actual surface intersection and placement. Repair dimensions/placement or construct the intended union/difference; hiding fragments does not repair topology. AABB overlap alone is insufficient evidence of penetration.
+- **Depth conflict:** distinguish duplicate/coplanar surfaces from insufficient depth precision. Remove structural duplicates. Reserve polygon offset for intentional layering; disabling depth tests or changing render order can conceal defects and create others.
 
-## Check camera and visibility separately
+Backface culling rejects triangles by facing. Clipping removes geometry/fragments outside a volume or plane. Neither term identifies the cause of a “see-through” report by itself.
 
-If the camera enters a solid or crosses its near plane, correct the camera path/collision or choose suitable near/far distances and update the projection matrix. Avoid an unnecessarily tiny near plane or huge depth range. Inspect configured clipping planes before changing geometry.
+## Separate camera and presentation policy
 
-When the user requests a camera cutaway, hide/fade selected occluding wall or roof sections, or use an explicit clipping plane. Keep this presentation policy separate from physical topology. Define picking, collision, shadow, and restoration behavior; clipping does not automatically cap cut surfaces. For WebGLRenderer, material clipping planes require `localClippingEnabled`; other backends need their supported clipping path.
+If slicing occurs as the camera approaches, inspect camera position, near/far planes, and explicit clipping planes. Correct camera paths/collision or choose suitable distances and update the projection matrix. Avoid an unnecessarily tiny near plane or huge depth range.
 
-## Evidence
+For a requested camera cutaway, hide/fade selected occluders or use a clipping plane. Define picking, collision, shadow, and restoration behavior separately from physical geometry. Clipping does not automatically cap cut surfaces. WebGLRenderer material clipping planes require `localClippingEnabled`; other backends need their supported path.
 
-Inspect cap options, triangle indices, degeneracy, transforms, and material settings in code. For closed components, check boundary-edge coverage using geometric positions rather than assuming duplicate vertices are holes. Scope checks around intentional openings and assembly interfaces. Sample rays from both sides where useful, accounting for material sidedness; ordinary mesh rays do not reproduce shader clipping or transparency.
+## Verify at the appropriate level
 
-The bundled CLI has no topology or rendered-visibility audit. Add focused geometry checks and report the component and verified scope. Keep final appearance unverified when visual tools are unavailable or prohibited.
+Inspect indices, degeneracy, boundary coverage, transforms, and material settings. Account for split vertices at normal/UV seams when checking geometric edge connectivity. Scope closure checks to intended closed regions; a thin sheet has legitimate boundaries. Closure alone does not prove valid volume: check orientation, non-manifold connections, and self-intersections when relevant.
+
+Use bidirectional rays where useful, with material sidedness accounted for; ordinary mesh rays do not reproduce shader clipping or transparency. The bundled CLI has no topology or rendered-visibility audit. Add focused geometry checks, state their scope, and leave final appearance unverified when visual tools are unavailable or prohibited.
 
 References: [Material](https://threejs.org/docs/pages/Material.html), [WebGLRenderer](https://threejs.org/docs/pages/WebGLRenderer.html), [PerspectiveCamera](https://threejs.org/docs/pages/PerspectiveCamera.html).
