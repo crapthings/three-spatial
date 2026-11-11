@@ -7,6 +7,7 @@ Identify meaningful assemblies, their roles, and editable sources. Semantic comp
 - Establish units, coordinate frames, position anchors, semantic front/up, and pivots. An origin need not be a bottom, center, or front surface. Inspect declared and measured dimensions; see [spatial-contract.md](spatial-contract.md).
 - Set final size and orientation before surface placement, then recalculate contact offsets. For origin placement, convert world points to parent-local coordinates. Facing a fixed target depends on final position.
 - For architectural shells, remove internal and overlapping coplanar faces at joins. Model openings through the full wall thickness; decorative door/window panels do not establish passage.
+- For missing surfaces, apparent clipping, or see-through solids, read [surfaces.md](surfaces.md). Diagnose topology and facing before changing material sidedness or camera clipping.
 - Model actual hinge transforms when needed. Bundled rotation tools rotate around the object origin.
 - Edit source/generator dimensions rather than stretching an assembly with protected clearances. After regeneration, re-resolve members and reject stale selections; preserve sparse overrides.
 - For scene construction, review [layout.md](layout.md), [relations.md](relations.md), and [color.md](color.md). For narrow edits, load the affected topic only. Establish palette roles before material generation and support connections before decoration.
