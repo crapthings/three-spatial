@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "revision": 0,
+  "coordinates": { "dimensions": 3, "unit": "scene-unit", "metersPerUnit": 1, "frame": "warehouse-local", "up": "+Y" },
+  "parts": [
+    { "id": "warehouse", "kind": "assembly", "description": "A purely abstract warehouse; no meshes or engine bindings" },
+    {
+      "id": "warehouse.racks",
+      "kind": "procedural-set",
+      "partOf": "warehouse",
+      "editMode": "external-generator",
+      "generator": {
+        "type": "linear",
+        "count": 100000,
+        "origin": [0, 0, 0],
+        "step": [2, 0, 0],
+        "frame": "warehouse-local",
+        "bindingTemplates": []
+      }
+    }
+  ]
+}
