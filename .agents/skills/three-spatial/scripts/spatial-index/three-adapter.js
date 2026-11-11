@@ -20,7 +20,7 @@ export function createIndexAdapter (root, { updateProcedural } = {}) {
     const closest = new Vector3()
     object.traverse(child => {
       if (!child.geometry) return
-      if (child.isSkinnedMesh || child.isInstancedMesh) throw new Error('Relation contact checks support static meshes only')
+      if (child.isSkinnedMesh || child.isInstancedMesh || child.morphTargetInfluences?.some(value => value !== 0)) throw new Error('Relation contact checks support static, non-instanced meshes without active morph targets only')
       const positions = child.geometry.attributes.position
       const indices = child.geometry.index
       for (let i = 0; i < (indices?.count ?? positions.count); i += 3) {

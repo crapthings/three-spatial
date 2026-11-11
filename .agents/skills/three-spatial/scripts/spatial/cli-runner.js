@@ -29,6 +29,8 @@ export async function runSpatialCli (createTools = createSpatialTools, args = pr
   }
   if (output) await writeFile(output, JSON.stringify(result, null, 2))
   else console.log(JSON.stringify(result, null, 2))
+  if (request.op === 'validate-index' && !result.valid) process.exitCode = 1
+  if (['check-constraints', 'check-relations'].includes(request.op) && !result.pass) {
+    process.exitCode = result.status === 'needs-review' ? 2 : 1
+  }
 }
-
-

@@ -6,6 +6,8 @@ Identify meaningful assemblies, their roles, and editable sources. Semantic comp
 
 For open-ended creation, read [creative-direction.md](creative-direction.md): grow a coherent concept and connected details from the user's cues. Use [aesthetics.md](aesthetics.md) during construction and refinement to evaluate how those choices express the concept. Alternate invention and judgment as needed; narrow repairs retain the established direction.
 
+Establish the whole at coarse resolution before expanding detail: primary masses, major openings, circulation, and a provisional viewing setup. Check those relationships first, then develop assemblies and repeated decoration. Use the permitted evidence at each stage; code-level checks do not establish rendered appearance. Revisit the coarse design when details expose a conflict instead of accumulating patches.
+
 ## Plan and edit
 
 - Establish units, coordinate frames, position anchors, semantic front/up, and pivots. An origin need not be a bottom, center, or front surface. Inspect declared and measured dimensions; see [spatial-contract.md](spatial-contract.md).

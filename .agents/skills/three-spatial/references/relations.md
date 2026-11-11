@@ -11,7 +11,7 @@ Use for scene construction, component completeness, mounting, or floating-object
 
 Relation types are `attached-to`, `supports`, `connects`, and `defines-boundary`. `supports` points from carrier to carried part; `attached-to` points from mounted part to host. Anchors `{from:[x,y,z],to:[x,y,z]}` are endpoint-local; positive tolerance is in scene units. These declarations express project intent, not universal structural laws.
 
-`validate-index` checks references, roles, and required relation types. `inspect-relations` lists declared relations for an optional exact part ID. `check-relations` requires a whole-object binding per endpoint and measures anchor coincidence plus distance to static triangles. Unsupported geometry or qualitative checks remain `unverified`.
+`validate-index` checks references, roles, and required relation types. `inspect-relations` lists declared relations for an optional exact part ID. `check-relations` requires a whole-object binding per endpoint and measures anchor coincidence plus distance to static triangles. Instanced/skinned geometry, active morph targets, and qualitative checks remain `unverified`.
 
 ## Support and mounting audit
 

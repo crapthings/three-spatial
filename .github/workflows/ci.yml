@@ -12,12 +12,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Check skill metadata and portable references
+        run: node scripts/check-skill.js
       - name: Install locked runtime
         working-directory: .agents/skills/three-spatial/scripts
         run: npm ci --ignore-scripts --no-audit --no-fund
-      - name: Validate example index
-        run: node .agents/skills/three-spatial/scripts/spatial-index/cli.js .agents/skills/three-spatial/assets/example-index.json '{"op":"validate-index"}'
-      - name: Generate example scene
-        run: node .agents/skills/three-spatial/scripts/create-example.js artifacts
-      - name: Query scene geometry
-        run: node .agents/skills/three-spatial/scripts/spatial/cli.js artifacts/example-scene.json '{"op":"inspect-dimensions","id":"example.block"}'
+      - name: Verify offline tool behavior
+        run: node --test test/runtime.test.js

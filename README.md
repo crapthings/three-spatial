@@ -79,6 +79,18 @@ Start with [SKILL.md](.agents/skills/three-spatial/SKILL.md). Detailed reference
 
 The complete skill lives in `.agents/skills/three-spatial` and can also be copied into another project. It includes its own scripts, references, example index, and license.
 
+## Contributing
+
+Edit the skill in `.agents/skills/three-spatial`. Keep general guidance in its references and project-specific generators in the consuming project. Run the same checks as CI:
+
+```sh
+node scripts/check-skill.js
+npm ci --prefix .agents/skills/three-spatial/scripts --ignore-scripts --no-audit --no-fund
+node --test test/runtime.test.js
+```
+
+The runtime tests check measured results, persisted edits, validation exit codes, and unsupported contact evidence. They do not score creativity or visual quality.
+
 ## License
 
 [MIT](LICENSE). Issues and improvements are welcome.

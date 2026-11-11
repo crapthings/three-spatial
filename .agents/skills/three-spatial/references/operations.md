@@ -26,6 +26,8 @@ Object names must be unique or use UUIDs. Geometry operations generally use name
 
 Offline `apply-transform`, `orient-toward`, `align-axis` and `update-procedural` require an explicit output scene path. Subsequent queries must read that output. Other commands write their response to the optional output path. For live mutations that path saves only the response; use `export-scene` to save the actual scene.
 
+Validation exit codes: `validate-index`, `check-constraints`, and `check-relations` exit 0 for a pass and 1 for a failure or execution error. `check-relations` exits 2 for `needs-review` (missing or unsupported evidence). JSON reports remain available on stdout or at the requested output path. Other queries can succeed while reporting a negative finding, such as `check-overlap` returning false.
+
 ## Direction conventions
 
 Declare local `orientation: {front,up}` on semantic parts or object `userData`. Query precedence is request overrides → object metadata → unique semantic declaration → engine default (+Z/+Y objects, -Z/+Y cameras). Defaults are labeled `engine-default-assumption`; imported model front is not verified by that label. Front/up must be nonzero and perpendicular.
