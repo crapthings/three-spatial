@@ -2,6 +2,10 @@
 
 Identify meaningful assemblies, their roles, and editable sources. Semantic composition is not transform parenting. Keep repeated details in collection recipes.
 
+## Develop and refine the design
+
+For open-ended creation, read [creative-direction.md](creative-direction.md): grow a coherent concept and connected details from the user's cues. Use [aesthetics.md](aesthetics.md) during construction and refinement to evaluate how those choices express the concept. Alternate invention and judgment as needed; narrow repairs retain the established direction.
+
 ## Plan and edit
 
 - Establish units, coordinate frames, position anchors, semantic front/up, and pivots. An origin need not be a bottom, center, or front surface. Inspect declared and measured dimensions; see [spatial-contract.md](spatial-contract.md).

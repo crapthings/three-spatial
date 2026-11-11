@@ -36,6 +36,7 @@ You can use the skill for a new scene or a focused repair in an existing project
 
 ## What it helps with
 
+- **Creative direction and refinement:** develop a coherent concept from a rough idea, then refine its hierarchy, rhythm, and character.
 - **Placement and proportions:** units, coordinate frames, pivots, orientation, and functional clearances.
 - **Connected assemblies:** support chains, mounting points, openings, and the relationships between parts.
 - **Procedural worlds:** repeatable recipes, stable member identities, and edits that survive regeneration.
@@ -68,6 +69,7 @@ If you installed globally or in another location, set `SKILL_ROOT` to that folde
 
 Start with [SKILL.md](.agents/skills/three-spatial/SKILL.md). Detailed references are loaded as needed:
 
+- [Creative direction](.agents/skills/three-spatial/references/creative-direction.md) and [aesthetic refinement](.agents/skills/three-spatial/references/aesthetics.md)
 - [Setup and integration](.agents/skills/three-spatial/references/setup.md)
 - [Geometry and orientation commands](.agents/skills/three-spatial/references/operations.md)
 - [Procedural collections and semantic indexes](.agents/skills/three-spatial/references/semantic-index.md)

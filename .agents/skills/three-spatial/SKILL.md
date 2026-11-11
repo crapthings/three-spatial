@@ -1,6 +1,6 @@
 ---
 name: three-spatial
-description: Build, inspect, and edit Three.js or React Three Fiber scenes, including procedural worlds, component placement, dimensions, support connections, layout, and color/material design. Includes offline geometry and semantic-index tools.
+description: Build, inspect, and edit Three.js or React Three Fiber scenes, including creative direction, procedural worlds, component placement, proportions, support connections, and aesthetic refinement. Includes offline geometry and semantic-index tools.
 ---
 
 # Three Spatial
@@ -25,6 +25,8 @@ Use existing scenes or offline files. Do not start a development server automati
 
 | Task | Reference |
 | --- | --- |
+| Sparse briefs, concept development and coherent detail | [creative-direction.md](references/creative-direction.md) |
+| Aesthetic judgment, visual coherence and refinement | [aesthetics.md](references/aesthetics.md) |
 | Units, size frames, style protections | [spatial-contract.md](references/spatial-contract.md) |
 | Intrinsic, part-to-whole and scene-scale proportions | [proportions.md](references/proportions.md) |
 | CLI requests, orientation, constraints, limitations | [operations.md](references/operations.md) |
