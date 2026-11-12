@@ -2,7 +2,7 @@
 
 Help your coding agent build 3D scenes that fit together.
 
-**Three Spatial** is a skill for Three.js and React Three Fiber. It gives your agent a practical workflow for turning a scene idea into geometry, arranging its parts, and checking the result. It covers the details that are easy to miss: a door needs a real opening, a porch needs connected supports, and a palette needs to work across the whole scene.
+**Three Spatial** helps coding agents create, continue, and refine Three.js and React Three Fiber scenes. It connects creative direction with shape, proportions, layout, materials, and geometry checks—whether you have a rough idea or an existing scene that needs a focused fix.
 
 ## Get started
 
@@ -22,6 +22,19 @@ Add `-g` if you want it available across your projects.
 
 Then ask your agent to use **three-spatial**. You don't need to learn the bundled commands to get started.
 
+## Pick up wherever you are
+
+You can install the skill at any stage. It starts with your current scene and request, preserves established choices, and loads the guidance needed for the next decision.
+
+| Your task | Where the agent starts |
+| --- | --- |
+| A rough idea or a new scene | Develop a concept, establish primary forms and spatial relationships, then add detail. |
+| Work already in progress | Inspect the existing design and continue from the unresolved decision. |
+| Visual refinement | Identify the weak relationship and adjust the relevant shape, proportion, layout, or material choices. |
+| A defect or measurement request | Diagnose the symptom or query the geometry directly. |
+
+These are entry points, not a fixed sequence or ranking. Findings can change the route: an apparent proportion issue may come from the camera, and a color problem may come from lighting. The agent follows your scope and constraints, resolves dependencies for the current task, and rechecks affected relationships.
+
 ## Try asking
 
 > Use three-spatial to build a procedural haunted estate with a clear entrance, sloped grounds, and a coherent low-poly palette.
@@ -31,8 +44,6 @@ Then ask your agent to use **three-spatial**. You don't need to learn the bundle
 > Arrange these objects on the shelves. Preserve their sizes, leave useful margins, and keep the display readable from the camera.
 
 > Turn this model toward the doorway, then check its orientation and clearance in the final position.
-
-Install at any stage: start a new scene, continue existing work, or make a focused repair. The skill selects guidance for the current task rather than restarting a fixed design process.
 
 ## What it helps with
 
