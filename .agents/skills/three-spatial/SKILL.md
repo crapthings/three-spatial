@@ -28,6 +28,7 @@ Use existing scenes or offline files. Do not start a development server automati
 | Sparse briefs, concept development and coherent detail | [creative-direction.md](references/creative-direction.md) |
 | Aesthetic judgment, visual coherence and refinement | [aesthetics.md](references/aesthetics.md) |
 | Units, size frames, style protections | [spatial-contract.md](references/spatial-contract.md) |
+| Shape language, silhouettes, massing and negative space | [form.md](references/form.md) |
 | Intrinsic, part-to-whole and scene-scale proportions | [proportions.md](references/proportions.md) |
 | CLI requests, orientation, constraints, limitations | [operations.md](references/operations.md) |
 | Part-whole structure, PCG selection and identities | [semantic-index.md](references/semantic-index.md) |

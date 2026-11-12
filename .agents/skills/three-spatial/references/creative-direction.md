@@ -12,7 +12,7 @@ Keep a concise working direction: what the scene expresses, its defining idea, a
 
 ## Derive details through relationships
 
-Develop primary forms and functional assemblies before decorative fragments. Ask what the chosen setting implies about use, construction, environment, history, or activity. Let those implications produce connected details: a use suggests access, access shapes circulation, and repeated activity leaves localized traces. Environmental storytelling can remain subtle or abstract; do not impose realism or a backstory on every brief.
+Develop primary forms and functional assemblies before decorative fragments. Use [form.md](form.md) to translate the concept into silhouettes, masses, voids, and connection rules. Ask what the chosen setting implies about use, construction, environment, history, or activity. Let those implications produce connected details: a use suggests access, access shapes circulation, and repeated activity leaves localized traces. Environmental storytelling can remain subtle or abstract; do not impose realism or a backstory on every brief.
 
 Choose a few recognizable motifs and vary their expression across scales. Include contrast or surprise where it strengthens the concept. Preserve quieter areas and omit details with no useful role. Distinctiveness can come from silhouette, spatial relationships, or interaction as well as ornament.
 

@@ -11,6 +11,7 @@ Establish the whole at coarse resolution before expanding detail: primary masses
 ## Plan and edit
 
 - Establish units, coordinate frames, position anchors, semantic front/up, and pivots. An origin need not be a bottom, center, or front surface. Inspect declared and measured dimensions; see [spatial-contract.md](spatial-contract.md).
+- For shape development, read [form.md](form.md). Establish the mass hierarchy, silhouette, and solid/void relationships before detailing.
 - For scale or proportion decisions, read [proportions.md](proportions.md). Establish a reference and fixed versus adjustable relationships before choosing dimensions.
 - Set final size and orientation before surface placement, then recalculate contact offsets. For origin placement, convert world points to parent-local coordinates. Facing a fixed target depends on final position.
 - For architectural shells, remove internal and overlapping coplanar faces at joins. Model openings through the full wall thickness; decorative door/window panels do not establish passage.

@@ -37,6 +37,7 @@ You can use the skill for a new scene or a focused repair in an existing project
 ## What it helps with
 
 - **Creative direction and refinement:** develop a coherent concept from a rough idea, then refine its hierarchy, rhythm, and character.
+- **Form and shape language:** develop silhouettes, connected masses, and purposeful openings before adding detail.
 - **Placement and proportions:** units, coordinate frames, pivots, orientation, and functional clearances.
 - **Connected assemblies:** support chains, mounting points, openings, and the relationships between parts.
 - **Procedural worlds:** repeatable recipes, stable member identities, and edits that survive regeneration.
@@ -74,6 +75,7 @@ Start with [SKILL.md](.agents/skills/three-spatial/SKILL.md). Detailed reference
 - [Geometry and orientation commands](.agents/skills/three-spatial/references/operations.md)
 - [Procedural collections and semantic indexes](.agents/skills/three-spatial/references/semantic-index.md)
 - [Surface integrity and visibility](.agents/skills/three-spatial/references/surfaces.md)
+- [Form and shape language](.agents/skills/three-spatial/references/form.md)
 - [Proportions and scale relationships](.agents/skills/three-spatial/references/proportions.md)
 - [Layout](.agents/skills/three-spatial/references/layout.md), [support and connections](.agents/skills/three-spatial/references/relations.md), and [color](.agents/skills/three-spatial/references/color.md)
 
