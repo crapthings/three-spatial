@@ -15,11 +15,21 @@ This folder is self-contained. Resolve bundled paths relative to this file; `SKI
 
 Use existing scenes or offline files. Do not start a development server automatically. Respect the user's tool restrictions, including restrictions on visual review.
 
-## Workflow
+## Enter at the current state
 
-1. Establish units, coordinate frames, intended roles, editable sources, and protected dimensions. Object scale is dimensionless; meters require an explicit conversion.
-2. Read [workflow.md](references/workflow.md) for construction or combined edits. Change generators/source parameters for durable edits; re-resolve generated members afterward.
-3. Verify the final state against the task. Report measured failures and unverified aspects separately; geometry validity does not prove visual quality. Persist generator parameters or export scene changes.
+This skill can be installed at any stage. Inspect the current artifact, source/generator, available evidence, and requested change before choosing references. Installation is not a request to restart, redesign, or audit every topic. The reference table is a router, not a reading order or ranking.
+
+- **Create:** develop missing intent and coarse relationships, then elaborate where needed.
+- **Continue or refine:** retain established choices and enter at the unresolved decision or weak relationship.
+- **Repair or measure:** start with the reported symptom or query and its relevant geometry/tools; creative development is optional, not a prerequisite.
+
+Read [workflow.md](references/workflow.md) for construction or combined edits. Use only the references needed for the current decision, then revisit dependencies affected by the result. A color problem may turn out to be lighting; a perceived proportion issue may come from camera projection. Update the diagnosis rather than following a fixed sequence.
+
+## Resolve priorities by constraints and dependencies
+
+Respect the user's current intent, scope, and tool restrictions. Preserve declared functional requirements and protected choices unless the requested redesign changes them. Within that scope, resolve prerequisites for the current task before dependent polish; do not turn a local edit into an unrelated scene-wide repair. Choose the next change by task impact and evidence, not fixed numeric weights or a universal technical-before-artistic order.
+
+Before geometry edits, establish the relevant units, frames, and editable source. Scale is dimensionless; meters require explicit conversion. Persist source changes, re-resolve generated members, and verify the affected final state. Report measured failures and unverified aspects separately; valid geometry does not prove visual quality.
 
 ## Load only relevant references
 

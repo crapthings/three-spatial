@@ -32,7 +32,7 @@ Then ask your agent to use **three-spatial**. You don't need to learn the bundle
 
 > Turn this model toward the doorway, then check its orientation and clearance in the final position.
 
-You can use the skill for a new scene or a focused repair in an existing project.
+Install at any stage: start a new scene, continue existing work, or make a focused repair. The skill selects guidance for the current task rather than restarting a fixed design process.
 
 ## What it helps with
 

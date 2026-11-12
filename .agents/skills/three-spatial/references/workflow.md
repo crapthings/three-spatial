@@ -1,12 +1,14 @@
 # Construction and editing
 
-Identify meaningful assemblies, their roles, and editable sources. Semantic composition is not transform parenting. Keep repeated details in collection recipes.
+Enter at the current task and artifact state; these sections are conditional guidance, not mandatory stages. Inspect established intent, constraints, editable sources, and evidence. Preserve completed decisions unless the request or a demonstrated dependency requires revisiting them. Semantic composition is not transform parenting; keep repeated details in collection recipes.
 
 ## Develop and refine the design
 
 For open-ended creation, read [creative-direction.md](creative-direction.md): grow a coherent concept and connected details from the user's cues. Use [aesthetics.md](aesthetics.md) during construction and refinement to evaluate how those choices express the concept. Alternate invention and judgment as needed; narrow repairs retain the established direction.
 
-Establish the whole at coarse resolution before expanding detail: primary masses, major openings, circulation, and a provisional viewing setup. Check those relationships first, then develop assemblies and repeated decoration. Use the permitted evidence at each stage; code-level checks do not establish rendered appearance. Revisit the coarse design when details expose a conflict instead of accumulating patches.
+For new scenes or structural redesigns, establish the whole at coarse resolution before expanding detail: primary masses, major openings, circulation, and a provisional viewing setup. Check those relationships first, then develop assemblies and repeated decoration. Use the permitted evidence at each stage; code-level checks do not establish rendered appearance. Revisit the coarse design when details expose a conflict instead of accumulating patches.
+
+For existing work, apply this loop at the affected scope rather than rebuilding the scene. Choose the next action from the current finding; revisit upstream choices only when they cause the problem. Recheck dependent contacts, clearances, and visual relationships after a change. Stop when the requested result is supported by the permitted evidence; do not expand into unrelated topics.
 
 ## Plan and edit
 
@@ -18,7 +20,7 @@ Establish the whole at coarse resolution before expanding detail: primary masses
 - For missing surfaces, apparent clipping, or see-through solids, read [surfaces.md](surfaces.md). Diagnose topology and facing before changing material sidedness or camera clipping.
 - Model actual hinge transforms when needed. Bundled rotation tools rotate around the object origin.
 - Edit source/generator dimensions rather than stretching an assembly with protected clearances. After regeneration, re-resolve members and reject stale selections; preserve sparse overrides.
-- For scene construction, review [layout.md](layout.md), [relations.md](relations.md), and [color.md](color.md). For narrow edits, load the affected topic only. Establish palette roles before material generation and support connections before decoration.
+- For scene construction, consult [layout.md](layout.md), [relations.md](relations.md), or [color.md](color.md) when the corresponding decisions are unresolved. For narrow edits, load the affected topic only. Establish palette roles before material generation and support connections before decoration.
 
 ## Verify and persist
 
